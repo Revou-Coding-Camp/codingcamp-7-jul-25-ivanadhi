@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="todo-container">
+        
+        <h1>Todo List</h1>
+        
+        <form id="task-form" class="task-form">
+            <input 
+                type="text" 
+                id="task-input" 
+                placeholder="Add a todo ..." 
+                required
+            >
+            <input 
+                type="date"
+                id="task-date"
+            >
+            <button type="submit">+</button>
+        </form>
+        
+        <div class="controls">
+             <div class="filter-container">
+                 <select id="filter-tasks">
+                     <option value="all">All Tasks</option>
+                     <option value="active">Active</option>
+                     <option value="completed">Completed</option>
+                 </select>
+             </div>
+             <button id="delete-all-btn">
+                Delete All
+             </button>
+        </div>
+        
+        <ul id="task-list">
+            </ul>
+        
+        <div id="no-task-msg">
+            No task found. Let's add one!
+        </div>
+
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
